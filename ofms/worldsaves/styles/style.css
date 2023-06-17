@@ -1,0 +1,33 @@
+h1
+{
+    text-align:center;
+    font-size:55px;
+}
+body
+{
+    background-color:rgb(69, 62, 110);
+    text-align:center;
+    font-family:arial;
+    color:rgb(162, 146, 255);
+    border:rgb(162, 146, 255) 12px solid;
+}
+.maintext a:active, .maintext a:hover 
+{
+    background-image: none;
+}
+.maintext a 
+{
+    color:rgb(162, 146, 255);
+    background-image: none;
+    text-decoration: none;
+}
+.maintext
+{
+    font-size:28px;
+    display:flex;
+    flex-direction:column;
+}
+.extra
+{
+    image-rendering:pixelated;
+}
