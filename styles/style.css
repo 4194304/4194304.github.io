@@ -11,8 +11,13 @@ body
     background-repeat: no-repeat;
     background-attachment: fixed;
     color:var(--text);
-    font-family:Cambria;
+       font-family: cambria; 
 }
+@font-face 
+{ 
+  font-family: cambria; 
+  src: url('https://raw.githubusercontent.com/4194304/4194304.github.io/main/assets/Cambria.ttf'); 
+} 
 a
 {
     color:var(--text);
