@@ -12,7 +12,6 @@ body
     background-attachment: fixed;
     color:var(--text);
     font-family: cambria; 
-    background-color:var(--background);
 }
 @font-face 
 { 
@@ -43,7 +42,8 @@ button
 button:hover
 {
   color:white;
-  background-image:linear-gradient(var(--bglight),var(--background));
+  background-image:linear-gradient(var(--bglight),var(--bglight));
+  transition:500ms;
 }
 ul 
 {
@@ -53,10 +53,14 @@ ul
     overflow: hidden;
     background-image:linear-gradient(var(--bglight),var(--background));
     border-radius:10px;
+    animation-name:animationdown;
+    animation-duration:2s;
   }
   li 
   {
     float: left;
+    animation-name:animationdown;
+    animation-duration:2s;
   }
   li a 
   {
@@ -67,12 +71,16 @@ ul
     text-decoration: none;
     border-radius:10px;
     transition:500ms;
+    animation-name:animationdown;
+    animation-duration:2s;
   }
   li a:hover 
   {
     background-color: var(--bglight);
     transition:500ms;
     border-radius:10px;
+    animation-name:animationdown;
+    animation-duration:2s;
   }
   .main
   {
@@ -83,6 +91,8 @@ ul
     flex-flow:column wrap;
     padding:12px;
     overflow:hidden;
+    animation-name:animationup;
+    animation-duration:2s;
   }
   .a14
   {
@@ -98,6 +108,8 @@ ul
     left: 0;
     right: 0;
     text-align:center;
+    animation-name:animationup;
+    animation-duration:2s;
   }
   #lilypad
   {
@@ -131,3 +143,18 @@ ul
       justify-content:space-evenly;
     }
   }
+  @keyframes animationdown
+{
+  0% {transform: translateY(-40px); opacity: 0;}
+	100% {transform: translateY(0px); opacity: 1;}
+}
+h1
+{
+  animation-name:animationdown;
+  animation-duration:2s;
+}
+@keyframes animationup
+{
+  0% {transform: translateY(40px); opacity: 0;}
+	100% {transform: translateY(0px); opacity: 1;}
+}
