@@ -4,6 +4,7 @@
     --middle:rgb(207,195,179);
     --bglight:rgb(83, 80, 76);
     --text:antiquewhite;
+    --link:rgb(255, 244, 229);
 }
 body
 {
@@ -23,6 +24,12 @@ a
     color:var(--text);
     background-image: none;
     text-decoration: none;
+    transition:100ms;
+}
+a:hover
+{
+  color:var(--link);
+  transition:100ms;
 }
 button 
 {
