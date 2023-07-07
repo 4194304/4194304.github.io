@@ -165,3 +165,31 @@ h1
   0% {transform: translateY(40px); opacity: 0;}
 	100% {transform: translateY(0px); opacity: 1;}
 }
+.dropdown
+{
+  transition:500ms;
+  animation-name:animationdown;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image:linear-gradient(var(--bglight),var(--background));
+  border-radius:12px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition:125ms;
+}
+
+.dropdown:hover .dropdown-content
+{
+display:flex;
+flex-direction:column;
+animation-name:animationdown;
+animation-duration:500ms;
+transition:125ms;
+}
+.dropdown-content a
+{
+padding:12px;
+}
