@@ -149,6 +149,10 @@ ul
       display:flex;
       justify-content:space-evenly;
     }
+    .dropdown
+    {
+      display:none;
+    }
   }
   @keyframes animationdown
 {
