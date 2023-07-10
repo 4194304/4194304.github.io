@@ -197,3 +197,15 @@ transition:125ms;
 {
 padding:12px;
 }
+::-webkit-scrollbar {
+  background-image:linear-gradient(to bottom right,var(--background),var(--bglight));
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image:linear-gradient(to bottom right,var(--bglight),var(--middle));
+  border-radius: 5px;
+}
