@@ -159,11 +159,12 @@ ul
     {
       display:none;
     }
-    .fullmenu
+    .fullmenu button
     {
-      display:inline-block;
-      text-align:right;
+      text-align:center;
       max-height:55px;
+      max-width:100px;
+      font-size:16px;
       animation-name:animationdown;
       animation-duration:2s;
     }
