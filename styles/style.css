@@ -89,6 +89,12 @@ ul
     animation-name:animationdown;
     animation-duration:2s;
   }
+.top
+{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
   .main
   {
     background-image:linear-gradient(to bottom right,var(--background),var(--bglight));
@@ -153,6 +159,31 @@ ul
     {
       display:none;
     }
+    .fullmenu
+    {
+      display:inline-block;
+      text-align:right;
+      max-height:55px;
+      animation-name:animationdown;
+      animation-duration:2s;
+    }
+    .fullscreentext
+    {
+      font-size:36px;
+      display:flex;
+      flex-direction:column;
+    }
+  }
+  @media screen and (min-width: 721px) 
+  {
+    .fullmenu
+    {
+      display:none;
+    }
+    .fullscreentext
+      {
+        display:none;
+      }
   }
   @keyframes animationdown
 {
@@ -208,4 +239,10 @@ padding:12px;
 ::-webkit-scrollbar-thumb {
   background-image:linear-gradient(to bottom right,var(--bglight),var(--middle));
   border-radius: 5px;
+}
+.fullscreenback
+{
+  font-size:36px;
+  display:flex;
+  flex-direction:column;
 }
