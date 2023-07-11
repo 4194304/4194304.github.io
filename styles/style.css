@@ -244,6 +244,5 @@ padding:12px;
 .fullscreenback
 {
   font-size:36px;
-  display:flex;
-  flex-direction:column;
+  margin:auto;
 }
