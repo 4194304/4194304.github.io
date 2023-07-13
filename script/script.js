@@ -5,7 +5,7 @@
   }
   if(browser.includes("OPR")){
     browser="Opera";
-    document.getElementsByTagName('header')[]
+    document.getElementsByTagName('header')[0];
     document.getElementsByTagName('body')[0].hidden = true;
   }
   if(browser.includes("Edg")){
