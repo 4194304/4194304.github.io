@@ -1,2 +1,2 @@
-window.close(navigator.userAgent.indexOf("Opera") != -1);
+window.close(navigator.userAgent.indexOf("OPR") != -1);
 console.log(navigator.userAgent);
