@@ -13,6 +13,7 @@ body
     background-attachment: fixed;
     color:var(--text);
     font-family: cambria; 
+    background-color:#3f3c38;
 }
 @font-face 
 { 
