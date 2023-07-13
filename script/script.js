@@ -1,4 +1,5 @@
- browser = navigator.userAgent.split(" ");
+function onload(){
+browser = navigator.userAgent.split(" ");
   browser = browser[browser.length-1]
   if(browser.includes("Safari")){
     browser = "Safari";
