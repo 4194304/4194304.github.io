@@ -22,3 +22,4 @@ function onload(){
   console.log(browser);
   console.log(mobile);
 }
+close();
