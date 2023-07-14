@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>test</title>
+    <script src="styles/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="window4">
+    <div id="windowheader4" class="bar">
+      <img src="assets/11.png" width="20px" height="20px" onclick="show()" id="btnID">
+      <p>Exit</p>
+    </div>
+    <div class="menu" id="menu">
+      <p onclick="window1(this)">Cat</p>
+      <p onclick="window4(this)">4194304</p>
+      <p><s>Settings</s></p>
+      <p onclick="hide(this)">Exit Start Menu</p>
+  </div>
+</div>
+    <div id="window" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="windowheader" class="header">
+            <p>Cat</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close1(this)">
+        </div>
+        <img id="x" src="assets/o.jpg" width="300px" height="200px">
+      </div>
+      <div id="window5" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="window5" class="header">
+            <p>4194304 Websites</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close4(this)">
+        </div>
+        <p onclick="window3(this)">Desktop Display</p>
+        <p onclick="window2(this)">Mobile Display</p>
+        <br>
+        <button onclick="close4(this)">Exit this window</button>
+      </div>
+      <div id="window2" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="windowheader2" class="header">
+            <p>Mobile</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close2(this)">
+        </div>
+        <iframe src="https://4194304.github.io" width="390" height="844" frameborder="0"></iframe>
+      </div>
+      <div id="window3" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="windowheader3" class="header">
+            <p>Desktop</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close3(this)">
+        </div>
+        <iframe src="https://4194304.github.io" width="1280" height="720" frameborder="0"></iframe>
+      </div>
+      <script>
+        dragElement(document.getElementById("window"));
+        dragElement(document.getElementById("window2"));
+        dragElement(document.getElementById("window3"));
+        dragElement(document.getElementById("window4"));
+        dragElement(document.getElementById("window5"));
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+      </script>
+</body>
