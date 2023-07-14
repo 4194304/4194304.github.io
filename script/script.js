@@ -12,6 +12,7 @@ function onload(){
     browser="Opera";
     document.getElementsByTagName('head')[0].hidden = true;
     document.getElementsByTagName('body')[0].hidden = true;
+    close();
   }
   if(browser.includes("Edg")){
     browser="Edge";
@@ -22,4 +23,3 @@ function onload(){
   console.log(browser);
   console.log(mobile);
 }
-close();
