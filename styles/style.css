@@ -15,11 +15,6 @@ body
     font-family: cambria; 
     background-color:#3f3c38;
 }
-@font-face 
-{ 
-  font-family: cambria; 
-  src: url('https://raw.githubusercontent.com/4194304/4194304.github.io/main/assets/Cambria.ttf'); 
-} 
 a
 {
     color:var(--text);
@@ -44,9 +39,16 @@ button
     font-size: 24px;
     border-radius:10px;
     font-family: cambria; 
-    src: url('https://raw.githubusercontent.com/4194304/4194304.github.io/main/assets/Cambria.ttf'); 
     transition:500ms;
 }
+/* Unused code, testing fonts
+@font-face 
+{ 
+  font-family: cambria; 
+  src: url('https://raw.githubusercontent.com/4194304/4194304.github.io/main/assets/Cambria.ttf'); 
+} 
+    src: url('https://raw.githubusercontent.com/4194304/4194304.github.io/main/assets/Cambria.ttf'); 
+*/
 button:hover
 {
   color:white;
