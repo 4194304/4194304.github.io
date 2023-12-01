@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>Desktop mode</title>
+    <script src="styles/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/x.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <script src="x-frame-bypass.js" type="module"></script>
+</head>
+<body>
+  <div id="window4">
+    <div id="windowheader4" class="bar">
+      <img src="assets/11.png" width="20px" height="20px" onclick="show()" id="btnID">
+      <img src="assets/11.png" width="20px" height="20px" onclick="hide()" id="starthide">
+      <a href="https://4194304.github.io" target="_blank" onclick="exit(this)">Exit</a>
+    </div>
+    <div class="menu" id="menu">
+      <p onclick="window1(this)">Cat</p>
+      <p onclick="window4(this)">4194304</p>
+      <p onclick="window7(this)">Games</p>
+      <p onclick="lazy(this)">Settings</p>
+  </div>
+</div>
+    <div id="window" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="windowheader" class="header">
+            <p>Cat</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close1(this)">
+        </div>
+        <img id="x" src="assets/o.jpg" width="300px" height="200px">
+        <div class="catwindow2">
+          <span id="downarrowcat" class="material-symbols-outlined" onclick="catpics(this)">arrow_downward</span>
+        </div>
+        <div id="catpics">
+          <img src="assets/angora.png" width="300px" height="175px">
+          <img src="assets/mau.png" width="300px" height="175px">
+          <img src="assets/turkishvan.jpg" width="300px" height="175px">
+          <div class="annoyingdiv">
+            <span id="uparrowcat" class="material-symbols-outlined" onclick="hidepics(this)">arrow_upward</span>
+          </div>
+        </div>
+      </div>
+      <div id="window5" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="window5" class="header">
+            <p>4194304 Websites</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close4(this)">
+        </div>
+        <p onclick="window3(this)">Desktop Display</p>
+        <p onclick="window2(this)">Mobile Display</p>
+        <br>
+        <button onclick="close4(this)">Exit this window</button>
+        <p>&nbsp;</p>
+      </div>
+      <div id="window6" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="window6" class="header">
+            <p>Jezzball</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close6(this)">
+        </div>
+        <object data="https://www.jezzball.net/j/e/game.html"
+width="840"
+height="560"
+type="text/html">
+    Error
+</object>
+      </div>
+      <div id="window7" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="window7" class="header">
+            <p>Games</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close7(this)">
+        </div>
+        <h1>Games</h1>
+        <br>
+        <p>Fun games that you can waste your time with</p>
+        <br>
+        <p onclick="window6(this)">Jezzball (Crashes after completing stages)</p>
+        <br>
+        <p onclick="window8(this)">Solitaire</p>
+        <br>
+        <p onclick="window9(this)">Minecraft Classic</p>
+        <br>
+        <p onclick="window10(this)">Windows 98</p>
+      </div>
+      <div id="window2" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="windowheader2" class="header">
+            <p>Mobile</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close2(this)">
+        </div>
+        <iframe src="https://4194304.github.io" width="390" height="844" frameborder="0"></iframe>
+      </div>
+      <div id="window3" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="windowheader3" class="header">
+            <p>Desktop</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close3(this)">
+        </div>
+        <iframe src="https://4194304.github.io" width="1280" height="720" frameborder="0"></iframe>
+      </div>
+      <div id="window8" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="window8" class="header">
+            <p>Solitaire</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close8(this)">
+        </div>
+        <object data="https://www.solitr.com/"
+          width="840"
+          height="560"
+          type="text/html">
+    Error
+</object>
+</div>
+<div id="window9" class="window">
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <div id="window9" class="header">
+      <p>Minecraft</p>
+      <p>&nbsp;</p>
+      <img src="assets/button.png" width="20px" height="20px" onclick="close9(this)">
+  </div>
+  <object data="https://classicube.net/server/play"
+width="840"
+height="560"
+type="text/html">
+Error
+</object>
+      </div>
+      <div id="window10" class="window">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="window10" class="header">
+            <p>Windows 98</p>
+            <p>&nbsp;</p>
+            <img src="assets/button.png" width="20px" height="20px" onclick="close10(this)">
+        </div>
+        <object data="https://copy.sh/v86/?profile=windows98"
+      width="840"
+      height="720"
+      type="text/html">
+      Error
+      </object>
+</div>
+<div id="window11" class="window" class="errorframe">
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <div id="window11" class="header">
+      <p>Error</p>
+      <p>&nbsp;</p>
+      <img src="assets/button.png" width="20px" height="20px" onclick="lazyclose(this)">
+  </div>
+  <iframe is="x-frame-bypass" src="https://www.jezzball.net/j/e/game.html" width="640px" height="360px"></iframe>
+  <button onclick="lazyclose(this)">Close</button>
+</div>
+      <script>
+        dragElement(document.getElementById("window"));
+        dragElement(document.getElementById("window2"));
+        dragElement(document.getElementById("window3"));
+        dragElement(document.getElementById("window4"));
+        dragElement(document.getElementById("window5"));
+        dragElement(document.getElementById("window6"));
+        dragElement(document.getElementById("window7"));
+        dragElement(document.getElementById("window8"));
+        dragElement(document.getElementById("window9"));
+        dragElement(document.getElementById("window10"));
+        dragElement(document.getElementById("window11"));
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+      </script>
+</body>
